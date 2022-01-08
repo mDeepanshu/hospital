@@ -1,0 +1,88 @@
+<div class="container-fluid">
+  <div class="row no-gutters">
+    <div class="col">
+      <h1>ASHOKA HOSPITAL</h1>
+    </div>
+  </div>
+
+  <div class="row no-gutters justify-content-between second">
+    <!-- <div class="col">
+      <img src="../../assets/logotipo.svg" alt="logotipo" class="logotipo" />
+    </div> -->
+
+    <div class="col">
+      <h4>Address 1</h4>
+      <h4>Address 2</h4>
+      <h4>Contact Number</h4>
+      <!-- <p>91 886 73 76</p> -->
+      <!-- <div class="address">
+        <p>geral@nreparacoes.com</p>
+        <p>Av. Dr. Ribeiro de Magalhães, 1391</p>
+        <p>Centro Comercial 123, Loja BD</p>
+        <p>4610-108 Felgueiras</p>
+      </div> -->
+    </div>
+    <div class="col">
+      RECIEPT
+      {{ date }}
+    </div>
+  </div>
+
+  <div class="row no-gutters items-group">
+    <div class="col-6 label">
+      <p>Patient Name: {{ basicObj.first_name }}{{ basicObj.last_name }}</p>
+      <p>Category: {{ basicObj.category }}</p>
+    </div>
+
+    <div class="col-6">
+      <p>Doctor:{{ basicObj.consultingDoc }}</p>
+      <p>Payment Mode: {{ basicObj.paymentMode }}</p>
+    </div>
+  </div>
+
+  <div class="row no-gutters items-group">
+    <div class="col-3 label">
+      <p>Amount Received:</p>
+    </div>
+
+    <div class="col-9">
+      <p>{{ basicObj.fees }}</p>
+    </div>
+  </div>
+  <div class="row no-gutters items-group" style="height: 5em">
+    <div class="col-3 label">
+      <p>Signature:</p>
+    </div>
+
+    <div class="col-9">
+      <p></p>
+    </div>
+  </div>
+  <!-- <div class="row no-gutters items-group">
+    <div class="col">
+      <p class="label">Condições Gerais:</p>
+      <ul class="disclaimer">
+        <li>Prazo para levantar 90 dias</li>
+        <li>Garantia 90 dias</li>
+        <li>Esta assistência só é entregue a quem apresentar este documento</li>
+        <li>
+          O preço acresce 10% a cada 30 dias após fim do prazo de levantamento
+          (taxa de conservação)
+        </li>
+        <li>
+          Os dados do cliente, acima mencionados, ficam registados na N
+          Reparações apenas para efeitos de comunicação em relação às suas
+          assistências e facturação
+        </li>
+      </ul>
+    </div>
+  </div> -->
+
+  <div class="row no-gutters">
+    <div class="col">
+      <p class="disclaimer signature-field">
+        <!-- Declaro que li e concordo com o disposto neste documento em 03/02/2019 -->
+      </p>
+    </div>
+  </div>
+</div>
